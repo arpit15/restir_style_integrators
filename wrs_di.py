@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 from ipdb import set_trace
 
 # Set the desired mitsuba variant
-# mi.set_variant('cuda_ad_rgb')
-mi.set_variant('llvm_ad_rgb')
+mi.set_variant('cuda_ad_rgb')
+# mi.set_variant('llvm_ad_rgb')
 
 from mitsuba import Float, Vector3f, Thread, xml, Vector1f, Mask, UInt32, Ray3f
 from mitsuba import load_file, SurfaceInteraction3f, PositionSample3f
@@ -185,7 +185,7 @@ class ReSTIRIntegrator(mi.SamplingIntegrator):
 if __name__ == '__main__':
     from argparse import ArgumentParser
     parser = ArgumentParser("WRS")
-    parser.add_argument("-with_wrs", action="store_true", default=True)
+    parser.add_argument("-with_wrs", action="store_true", default=False)
     parser.add_argument("-s", dest="spp", type=int, default=1)
     args = parser.parse_args()
 
