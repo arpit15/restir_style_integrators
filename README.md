@@ -5,11 +5,11 @@ Install mitsuba3 `pip install mitsuba`.
 ![Result](emitter_di.png). 
 
 # RIS with WRS 
-![Result](wrs_emitter_di.png)
+![Result](wrs_emitter_di.png). 
 I used `M=32` and `n=1` with $\hat{p}(x) = \rho(x) L_e(x) G(x)$ according to the paper. 
 
 # To test the code
 With weighted reservoir sampling with RIS. 
-`python wrs_di.py -with_wrs`. 
+- `python wrs_di.py -with_wrs`.   
 With emitter only sampling. 
-`python wrs_di.py`
+- `python wrs_di.py`
