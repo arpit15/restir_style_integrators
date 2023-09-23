@@ -48,7 +48,7 @@ class ReSTIRIntegrator(mi.SamplingIntegrator):
         self.hide_emitters = props.get("hide_emitters", False)
 
         # # initialize reservoirs
-        self.restir_M = props.get("restir_M", 32)
+        self.restir_M = props.get("restir_M", 1)
 
         self.with_wrs = props.get("with_wrs", True)
 
